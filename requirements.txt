@@ -12,6 +12,5 @@ jupyter
 ipywidgets
 pandas-datareader
 yfinance
-plotly
 cufflinks
 nltk
