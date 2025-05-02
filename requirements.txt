@@ -15,3 +15,8 @@ yfinance
 cufflinks
 nltk
 imblearn
+fastapi
+uvicorn
+motor
+passlib
+pydantic
