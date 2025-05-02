@@ -20,3 +20,4 @@ uvicorn
 motor
 passlib
 pydantic
+email-validator
