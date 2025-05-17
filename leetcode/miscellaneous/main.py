@@ -1,12 +1,17 @@
-import pandas as pd
+from datetime import datetime
 
-df = pd.DataFrame({
-    'A': [1,2,3,1,2,3],
-    'B': [1,1,1,2,2,2],
-    'C': [5,6,7,8,9,10]
-})
+def convert_date(yymmdd):
+    date_obj = datetime.strptime(yymmdd, "%y%m%d")
+    return date_obj.strftime("%d%m%y")
 
-pv_table = pd.pivot_table(df, index='A', columns='B', values='C', aggfunc='sum')
-print(pv_table)
+print(convert_date("250510"))
 
-print(df.groupby(['A', 'B'])['C'].sum())
+
+def fibonacci(n):
+    a, b = 0, 1
+    for _ in range(n):
+        print(a, end=" ")
+        a, b = b, a+b
+
+
+fibonacci(10)
