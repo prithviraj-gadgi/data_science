@@ -13,5 +13,15 @@ def fibonacci(n):
         print(a, end=" ")
         a, b = b, a+b
 
-
 fibonacci(10)
+
+
+import math
+from collections import Counter
+
+def calculateMinProcessingSteps(transactionLedger: str) -> int:
+    freq = Counter(transactionLedger)
+    print(freq)
+    return sum(math.floor(k/2) for k in freq.values())
+
+print(calculateMinProcessingSteps('baabacaa'))

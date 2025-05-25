@@ -1,6 +1,7 @@
 /.idea/
 /.venv/
 /.virtual_documents/
+.env
 /anaconda_projects/
 /leetcode/miscellaneous/.ipynb_checkpoints/
 /notebooks/.ipynb_checkpoints/
