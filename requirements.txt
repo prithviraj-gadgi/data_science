@@ -13,6 +13,7 @@ yfinance
 alpha_vantage
 cufflinks
 nltk
+spacy
 imblearn
 datetime
 fastapi
