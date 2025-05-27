@@ -34,4 +34,4 @@ dependencies:
       - python-multipart
       - python-dotenv
       - httpx
-      - dotenv
+      - PyPDF2

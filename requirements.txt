@@ -27,4 +27,4 @@ python-jose[cryptography]
 python-multipart
 python-dotenv
 httpx
-dotenv
+PyPDF2
