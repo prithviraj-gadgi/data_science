@@ -20,7 +20,7 @@ dependencies:
       - alpha_vantage
       - cufflinks
       - nltk
-      - spacy
+      - spacy[transformers]
       - imblearn
       - datetime
       - fastapi
