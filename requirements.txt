@@ -33,3 +33,7 @@ langchain-community
 langchain-openai
 openai
 streamlit
+wikipedia
+numexpr
+langgraph
+google-search-results

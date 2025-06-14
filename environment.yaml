@@ -40,3 +40,7 @@ dependencies:
       - langchain-openai
       - openai
       - streamlit
+      - wikipedia
+      - numexpr
+      - langgraph
+      - google-search-results
