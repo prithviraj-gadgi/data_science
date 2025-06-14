@@ -50,3 +50,4 @@ dependencies:
       - libmagic
       - python-magic
       - python-magic-bin
+      - langchain-google-genai

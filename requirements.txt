@@ -43,3 +43,4 @@ faiss-cpu
 libmagic
 python-magic
 python-magic-bin
+langchain-google-genai

@@ -1,3 +1,5 @@
+import os
+from langchain_google_genai import GoogleGenerativeAI
 from langchain_openai import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain_core.runnables import RunnableMap, RunnableLambda
@@ -5,6 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 llm = OpenAI(temperature=0.7)
+# llm = GoogleGenerativeAI(api_key=os.getenv('GEMINIAPI_API_KEY'), temperature=0.7, model='gemini-2.0-flash')
 
 def get_details(country, language):
 
