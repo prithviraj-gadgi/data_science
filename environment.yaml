@@ -44,3 +44,9 @@ dependencies:
       - numexpr
       - langgraph
       - google-search-results
+      - unstructured
+      - tiktoken
+      - faiss-cpu
+      - libmagic
+      - python-magic
+      - python-magic-bin
