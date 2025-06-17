@@ -44,3 +44,7 @@ libmagic
 python-magic
 python-magic-bin
 langchain-google-genai
+tf-keras
+InstructorEmbedding
+sentence-transformers
+langchain-huggingface
