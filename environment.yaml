@@ -48,7 +48,6 @@ dependencies:
       - unstructured
       - tiktoken
       - faiss-cpu
-      - libmagic
       - python-magic
       - langchain-google-genai
       - tf-keras
