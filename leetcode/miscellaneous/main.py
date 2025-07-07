@@ -17,23 +17,23 @@
 # fibonacci(10)
 #
 #
-# import math
-# from collections import Counter
+import math
+from collections import Counter
+
+def calculateMinProcessingSteps(transactionLedger: str) -> int:
+    freq = Counter(transactionLedger)
+    print(freq)
+    return sum(math.floor(k/2) for k in freq.values())
+
+print(calculateMinProcessingSteps('baabacaa'))
+
+
+# with open(file='test.txt', mode='w+') as f:
+#     f.write("This is my first line.\nThis is my second line.")
 #
-# def calculateMinProcessingSteps(transactionLedger: str) -> int:
-#     freq = Counter(transactionLedger)
-#     print(freq)
-#     return sum(math.floor(k/2) for k in freq.values())
-#
-# print(calculateMinProcessingSteps('baabacaa'))
-
-
-with open(file='test.txt', mode='w+') as f:
-    f.write("This is my first line.\nThis is my second line.")
-
-with open(file='test.txt', mode='r+') as f:
-    print(f.read())
-    f.seek(0)
-    print(f.readline())
-    f.seek(0)
-    print(f.readlines())
+# with open(file='test.txt', mode='r+') as f:
+#     print(f.read())
+#     f.seek(0)
+#     print(f.readline())
+#     f.seek(0)
+#     print(f.readlines())

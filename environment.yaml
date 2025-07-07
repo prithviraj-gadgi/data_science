@@ -6,8 +6,9 @@ channels:
 dependencies:
   - python=3.12
   - pip
+  - libmagic
   - pip:
-      - tensorflow==2.19.0
+      - tensorflow
       - pandas
       - scikit-learn
       - matplotlib
@@ -49,7 +50,6 @@ dependencies:
       - faiss-cpu
       - libmagic
       - python-magic
-      - python-magic-bin
       - langchain-google-genai
       - tf-keras
       - InstructorEmbedding
