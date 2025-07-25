@@ -58,3 +58,5 @@ fastembed
 langchain-chroma
 langchain-ollama
 litellm
+huggingface_hub
+fsspec
