@@ -54,3 +54,13 @@ dependencies:
       - InstructorEmbedding
       - sentence-transformers
       - langchain-huggingface
+      - torch
+      - transformers
+      - datasets
+      - accelerate
+      - bitsandbytes
+      - wandb
+      - fastembed
+      - langchain-chroma
+      - langchain-ollama
+      - litellm
