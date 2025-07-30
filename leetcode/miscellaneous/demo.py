@@ -1,7 +1,5 @@
-import math
+l = [('Bob', 20), ('Alice', 30), ('Alice', 10)]
 
+l.sort(key=lambda x: (x[0]))
 
-def my_sqrt(x: int) -> int:
-    return math.floor(math.sqrt(x))
-
-print(my_sqrt(2))
+print(l)
