@@ -3,13 +3,14 @@ import streamlit as st
 
 st.set_page_config(page_title="Chatbot - Powered by Open Source LLM")
 
+model = "llama3.1"
 
 def generate_response(prompt):
     response_container = st.empty()
     full_response = ""
 
     output = litellm.completion(
-        model="ollama/gpt-oss",
+        model=f"ollama/{model}",
         messages=prompt,
         api_base="http://localhost:11434",
         stream=True
@@ -25,7 +26,7 @@ def generate_response(prompt):
     return full_response
 
 
-st.title("💬 Chatbot")
+st.title(f"💬 Model - {model}")
 st.caption("🚀 A streamlit chatbot powered by Ollama & Open Source LLM")
 
 if "messages" not in st.session_state:
