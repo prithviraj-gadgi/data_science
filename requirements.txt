@@ -34,6 +34,7 @@ httpx
 PyPDF2
 langchain
 langchain-community
+langchain_core
 langchain-openai
 openai
 streamlit
@@ -41,7 +42,7 @@ wikipedia
 numexpr
 langgraph
 google-search-results
-unstructured
+unstructured[all-docs]
 tiktoken
 faiss-cpu
 python-magic
@@ -62,3 +63,5 @@ langchain-ollama
 litellm
 huggingface_hub
 fsspec
+ollama
+pdfminer
