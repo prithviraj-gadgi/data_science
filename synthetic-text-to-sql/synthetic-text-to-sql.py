@@ -208,6 +208,12 @@ tokenizer.push_to_hub("prithviraj-gadgi/llama-3.1-8B_ft_text_to_sql")
 print("Model & tokenizer pushed to huggingface repository")
 
 
+# In[2]:
+
+
+get_ipython().system('jupyter nbconvert --to script synthetic-text-to-sql.ipynb')
+
+
 # In[ ]:
 
 
