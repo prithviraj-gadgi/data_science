@@ -8,9 +8,9 @@ from langchain.chains import RetrievalQA
 from dotenv import load_dotenv
 load_dotenv()
 
-llm = GoogleGenerativeAI(api_key=os.getenv('GEMINIAPI_API_KEY'), temperature=0.1, model='gemini-2.0-flash')
+llm = GoogleGenerativeAI(api_key=os.getenv('GEMINI_API_KEY'), temperature=0.1, model='gemini-2.0-flash')
 
-embedding = GoogleGenerativeAIEmbeddings(google_api_key=os.getenv('GEMINIAPI_API_KEY'), model="models/embedding-001")
+embedding = GoogleGenerativeAIEmbeddings(google_api_key=os.getenv('GEMINI_API_KEY'), model="models/embedding-001")
 
 def create_vector_db():
     loader = CSVLoader(file_path='./codebasics_faqs.csv', source_column='prompt')

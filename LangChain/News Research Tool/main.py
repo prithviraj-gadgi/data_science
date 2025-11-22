@@ -4,11 +4,11 @@ import time
 import streamlit as st
 from dotenv import load_dotenv
 from langchain.chains import RetrievalQAWithSourcesChain
+from langchain.chat_models import ChatOpenAI
+from langchain.embeddings import OpenAIEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import UnstructuredURLLoader
 from langchain_community.vectorstores import FAISS
-from langchain_google_genai import GoogleGenerativeAI
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
 load_dotenv()
 
@@ -17,15 +17,15 @@ st.sidebar.title("News Article URLs")
 
 urls = []
 for i in range(3):
-    url = st.sidebar.text_input(f"URL {i+1}")
+    url = st.sidebar.text_input(f"URL {i + 1}")
     urls.append(url)
 
 process_url_clicked = st.sidebar.button("Process URLs")
 
 main_placeholder = st.empty()
-llm = GoogleGenerativeAI(api_key=os.getenv('GEMINIAPI_API_KEY'), temperature=0.9, model='gemini-2.0-flash')
-embeddings = GoogleGenerativeAIEmbeddings(google_api_key=os.getenv('GEMINIAPI_API_KEY'), model="models/embedding-001")
 
+llm = ChatOpenAI(api_key=os.getenv('OPENAI_API_KEY'), temperature=0.9, model='gpt-4.1-mini')
+embeddings = OpenAIEmbeddings(openai_api_key=os.getenv('OPENAI_API_KEY'), model="text-embedding-3-large")
 
 if process_url_clicked:
     loader = UnstructuredURLLoader(urls=urls)
